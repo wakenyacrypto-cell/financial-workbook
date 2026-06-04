@@ -6,3 +6,4 @@ python-dateutil==2.8.2
 PyJWT==2.8.0
 requests==2.31.0
 cryptography==40.0.2
+livereload==2.7.2
