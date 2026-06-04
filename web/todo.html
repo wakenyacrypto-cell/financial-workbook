@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>To‑Do List — Financial Workbook</title>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+  <main class="todo-app">
+    <header>
+      <h1>To‑Do List</h1>
+      <p class="subtitle">Keep tasks, toggle complete, edit, delete — stored in your browser</p>
+    </header>
+
+    <section class="add-task">
+      <input id="newTaskInput" type="text" placeholder="What needs to be done?" aria-label="New task">
+      <button id="addTaskBtn">Add</button>
+    </section>
+
+    <section class="controls">
+      <div class="filters">
+        <button data-filter="all" class="filter-btn active">All</button>
+        <button data-filter="active" class="filter-btn">Active</button>
+        <button data-filter="completed" class="filter-btn">Completed</button>
+      </div>
+      <div class="actions">
+        <button id="clearCompleted">Clear Completed</button>
+      </div>
+    </section>
+
+    <section class="list">
+      <ul id="tasksList" aria-live="polite"></ul>
+    </section>
+
+    <footer>
+      <span id="taskCount">0</span> tasks
+    </footer>
+  </main>
+
+  <script src="todo.js"></script>
+</body>
+</html>
